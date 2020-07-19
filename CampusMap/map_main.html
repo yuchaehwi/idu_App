@@ -1,0 +1,253 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>무제 문서</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="css/campus_main.css?v=2" />
+   <link rel="stylesheet" href="../header.css" />
+   <link rel="stylesheet" href="../footer.css" />
+   <link rel="stylesheet" href="../jquery/jquery-mobile1.4.5.css" />
+   <script src="../total.js"></script>
+   <script src="phonebook_javascript.js"></script>
+   <script src="../jquery/jquery1.11.1.js"></script>
+   <script src="../jquery/jquery-mobile1.4.5.js"></script>
+   <script src="campusMap.js?v=5"></script>
+
+</head>
+
+<body>
+   <div data-role="page" id="page">
+      <?php include "../header.html"?>
+
+      <div class="content" data-role="content">
+         <img src="pic/idu_map.png" width="100%" border="0" />
+
+
+
+         <div class="split1">
+            <ul>
+               <li id="college1" class="college">
+                  <img class="bunho" src="img/1bun.png">은봉관
+               </li>
+               <li data-role="fieldcontain" id="List1" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·이사장실 ·총장실 ·행정부서장실 ·법인실 ·기획처, 교무처 ·입학처
+                     ·사무처 ·대외협력실 ·보건실 ·교수학습지원센터 ·아정미술관
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·학부사무실 ·영어과 ·비서학과 ·관광서비스경영학과 ·중국어과
+                     ·일본어과 ·세무회계학과 ·시각디자인과 ·멀티미디어디자인학과 ·만화·애니메이션학과
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·증명발급기 ·은봉홀 ·대회의실 ·중회의실 ·소회의실 ·교수연구실
+                     ·지하주차장 ·아정갤러리 ·역사관
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="1" href="#">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college2" class="college">
+                  <img class="bunho" src="img/2bun.png" /> 강당
+               </li>
+               <li data-role="fieldcontain" id="List2" class="list">
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·대학교회
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="2" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college3" class="college">
+                  <img class="bunho" src="img/3bun.png" /> 덕관
+               </li>
+               <li data-role="fieldcontain" id="List3" class="list">
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·건축학과, ·토목환경공학과 ·건설정보공학과 ·실내건축과
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·검교정센터<br /><br />
+                  </div>
+
+                  <div class="detail"><a id="3" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college4" class="college">
+                  <img class="bunho" src="img/4bun.png" /> 인관
+               </li>
+               <li data-role="fieldcontain" id="List4" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·산학협력처(단) ·취업지원센터 ·경력개발센터 ·학생상담센터
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·산업경영공학과 ·컴퓨터소프트웨어학과 ·주얼리디자인학과 ·공간장식도자디자인학과
+                     ·사회복지학과
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·잡카페<br /><br />
+                  </div>
+
+                  <div class="detail"><a id="4" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college5" class="college">
+                  <img class="bunho" src="img/5bun.png" /> 제1공학관
+               </li>
+               <li  data-role="fieldcontain" id="List5" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·창업지원단 ·인덕방송국
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·기계설계학과 ·기계자동차학과
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="5" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+            </ul>
+         </div>
+         <div class="space">
+            <p></p>
+         </div>
+         <div class="split2">
+            <ul>
+               <li id="college6" class="college">
+                  <img class="bunho" src="img/6bun.png" /> 중앙도서관
+               </li>
+               <li data-role="fieldcontain" id="List6" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·도서관 ·전산센터 ·학보사 ·교목실 ·연지회 ·총동창회실
+                     <br /><br />
+                  </div>
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·교수연구실 ·인터넷프라자 ·만화영상자료실
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="6" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college7" class="college">
+                  <img class="bunho" src="img/7bun.png" /> 제2공학관
+               </li>
+               <li data-role="fieldcontain" id="List7" class="list">
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·컴퓨터전자공학과 ·메카트로닉스과 ·방송영상미디어학과 ·정보통신공학과
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·세미나실 ·VR체험실
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="7" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college8" class="college">
+                  <img class="bunho" src="img/8bun.png" /> 창업선도관
+               </li>
+               <li data-role="fieldcontain" id="List8" class="list">
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·스타트업라운지 ·창업기업 입주
+                     <br /><br />
+                  </div>
+                  <div class="detail"> <a id="8" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+
+               <li id="college9" class="college">
+                  <img class="bunho" src="img/9bun.png" /> 조형관
+               </li>
+               <li data-role="fieldcontain" id="List9" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·평생교육센터 ·국제교육센터 ·국제협력센터
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/hak.png" /> 학과안내</strong><br />
+                  <div class="cam_content">
+                     ·디지털산업디자인학과 ·방송연예과 ·도시환경디자인과
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="9" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+
+               </li>
+
+
+               <!--
+                 <li data-icon="arrow-d" id="college10"> 
+                	<a href="#"><img src="img/10bun.png" /> 운동장</a>
+                </li>
+                <li id="sh10" data-role="fieldcontain" id="List10">
+                <strong>기타</strong><br />
+                축구장, 농구장, 족구장
+                <a style="background-color:rgb(0,0,0); color:rgb(255,255,255)" id="10" href="#">자세히>></a><br />
+                </li>
+                -->
+
+               <li id="college11" class="college">
+                  <img class="bunho" src="img/11bun.png" /> 연지스퀘어
+               </li>
+               <li data-role="fieldcontain" id="List11" class="list">
+                  <strong><img class="campus_icon" src="img/bo.png" /> 부서안내</strong><br />
+                  <div class="cam_content">
+                     ·학생처 ·예비군대대
+                     <br /><br />
+                  </div>
+
+                  <strong><img class="campus_icon" src="img/gi.png" /> 기타</strong><br />
+                  <div class="cam_content">
+                     ·총학생회 ·학회장연합회 ·대의원회 ·동아리, 학생식당 ·편의점 ·커피숍
+                     ·서점 및 문구점 ·스포츠센터 ·출력실 ·지하 주차장(B1, B2)
+                     <br /><br />
+                  </div>
+
+                  <div class="detail"><a id="11" href="#" class="detail">자세히>>&nbsp;&nbsp;</a></div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+
+      <?php include "../footer.html"?>
+   </div>
+</body>
+
+</html>

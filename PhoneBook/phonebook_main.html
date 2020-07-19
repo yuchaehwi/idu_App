@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- 화면 표현 영역 설정 -->
+    <meta name="viewport" content="width=device-width, height-device-height, initial-scale=1, minimum-scale=1.0">
+
+    <!-- 외부 CSS 연결 -->
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="phonebook.css?v=1" />
+    <link rel="stylesheet" href="../jquery/jquery-mobile1.4.5.css" />
+    <script src="../total.js"></script>
+    <script src="phonebook_javascript.js"></script>
+    <script src="../jquery/jquery1.11.1.js"></script>
+    <script src="../jquery/jquery-mobile1.4.5.js"></script>
+    <script src="phonebook_javascript.js?v=4"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page">
+        <!-- 상단 -->
+        <?php include "../header.html"?>
+
+        <!-- 중단 -->
+        <div data-role="content">
+            <!-- *** 검색 *** -->
+            <div class="search_form">
+                <input type="text" data-role="none" class="pb_PhoneSearch_Text" placeholder="검색" />
+                <input type="button" data-role="none" class="btn btn-primary btn-lg round" value="검색">
+            </div>
+
+            <!-- *** Hot Search *** -->
+            <div class="pb_Hot_Search">
+                <a href="#" class="pb_Hot_Search_list" id="pb_Hot_Search_list1"> 학생처</a> /
+                <a href="#" class="pb_Hot_Search_list" id="pb_Hot_Search_list2"> 입학처</a> /
+                <a href="#" class="pb_Hot_Search_list" id="pb_Hot_Search_list3"> 사회봉사단</a> /
+                <a href="#" class="pb_Hot_Search_list" id="pb_Hot_Search_list4"> 창업지원단</a> <br>
+
+                <h5 id="pb_Hot_Search_Result1"> 학생처 : 02-950-7073 </h5>
+                <h5 id="pb_Hot_Search_Result2"> 입학처 : 02-950-7052~4 </h5>
+                <h5 id="pb_Hot_Search_Result3"> 사회봉사단 : 02-950-7106 </h5>
+                <h5 id="pb_Hot_Search_Result4"> 창업지원단 : 02-950-7093, 7095, 7098 </h5>
+            </div>
+
+            <div class="pb_table">
+                <div id="office_list">
+                    <div class="row">
+                        <ul class="row_table">
+                            <li id="BubIn">법인</li>
+                            <li id="BiSeo">비서실</li>
+                            <li id="GyoMok">교목실장</li>
+                            <li id="GukJe">국제협력센터</li>
+                            <li id="ChangEop">창업지원단</li>
+                            <li id="BongSa">사회봉사단</li>
+                            <li id="KiHoek">기획처</li>
+                            <li id="GyoMu">교무처</li>
+                            <li id="SanHak">산학협력처</li>
+                            <li id="HakSangCuh">학생처</li>
+                            <li id="IpHak">입학처</li>
+                            <li id="SaMu">사무처</li>
+                            <li id="YeBiGun">예비군대대</li>
+                            <li id="Library">도서관</li>
+                            <li id="MiRae">미래교육단</li>
+                            <li id="Newspaper">대학신문사</li>
+                            <li id="IBS">교육방송국</li>
+                            <li id="AJung">아정미술관</li>
+                            <li id="SangDam">학생상담센터</li>
+                            <li id="DaeOe">대외협력실</li>
+                            <li id="GyoSu">교수학습지원센터</li>
+                            <li id="JunSan">전산센터</li>
+                            <li id="SuWe">수위실</li>
+                            <li id="MyoungYe">명예교수실</li>
+                            <li id="DongChang">총동창회</li>
+                            <li id="Student">학생기구</li>
+                            <li id="PyeonUi">편의시설</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 법인 -->
+            <div id="BubIn_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>법인</td>
+                            <td>부장</td>
+                            <td>윤병권</td>
+                            <td>02-950-7005</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 비서실 -->
+            <div id="BiSeo_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>비서실</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>02-950-7010</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 교목실 -->
+            <div id="GyoMok_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">교목실</td>
+                            <td>교목실장</td>
+                            <td>구완서</td>
+                            <td>02-950-7443</td>
+                        </tr>
+                        <tr>
+                            <td>교목</td>
+                            <td>장형철</td>
+                            <td>02-950-7026</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>서성현</td>
+                            <td>02-950-7020</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 국제협력센터 -->
+            <div id="GukJe_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">국제협력센터</td>
+                            <td>센터장</td>
+                            <td>천종업</td>
+                            <td>02-950-7040</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김보석</td>
+                            <td>02-950-7041</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김진호</td>
+                            <td>02-950-7042</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 창업지원단 -->
+            <div id="ChangEop_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="9">창업지원단</td>
+                            <td>단장</td>
+                            <td>김종부</td>
+                            <td>02-950-7090</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이지동</td>
+                            <td>02-950-7093</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>하희주</td>
+                            <td>02-950-8095</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>구본아</td>
+                            <td>02-950-7098</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>조재성</td>
+                            <td>02-950-7091</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이나래</td>
+                            <td>02-950-7092</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>박명주</td>
+                            <td>02-950-7097</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>최유정</td>
+                            <td>02-950-7097</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>성왕훈</td>
+                            <td>02-950-7357</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 사회봉사단 -->
+            <div id="BongSa_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">사회봉사단</td>
+                            <td>단장</td>
+                            <td>김진영</td>
+                            <td>02-950-7045</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>육성준</td>
+                            <td>02-950-7106</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 기획처 -->
+            <div id="KiHoek_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>기획처</td>
+                            <td>처장</td>
+                            <td>이영희</td>
+                            <td>02-950-7030</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">기획과</td>
+                            <td>팀장</td>
+                            <td>이종원</td>
+                            <td>02-950-7031</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>전우진</td>
+                            <td>02-950-7033</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김지현</td>
+                            <td>02-950-7035</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>박수연</td>
+                            <td>02-950-7034</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 교무처 -->
+            <div id="GyoMu_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>교무처</td>
+                            <td>처장</td>
+                            <td>강문상</td>
+                            <td>02-950-7060</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">교무과</td>
+                            <td>부장</td>
+                            <td>엄기용</td>
+                            <td>02-950-7061</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>류석원</td>
+                            <td>02-950-7063</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김회진</td>
+                            <td>02-950-7062</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>황성현</td>
+                            <td>02-950-7068</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>안기춘</td>
+                            <td>02-950-7065</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>전병호</td>
+                            <td>02-950-7068</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">학적과</td>
+                            <td>팀장</td>
+                            <td>이호선</td>
+                            <td>02-950-7066</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>강혜진</td>
+                            <td>02-950-7067</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>채승정</td>
+                            <td>02-950-7071</td>
+                        </tr>
+                        <tr>
+                            <td>NCS지원센터</td>
+                            <td>계장</td>
+                            <td>김도형</td>
+                            <td>02-950-7064</td>
+                        </tr>
+                        <tr>
+                            <td>외래교수실</td>
+                            <td>&nbsp;</td>
+                            <td>외래교수실</td>
+                            <td>02-950-7070</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 산학협력처(단) -->
+            <div id="SanHak_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>산학협력처(단)</td>
+                            <td>처장</td>
+                            <td>정성훈</td>
+                            <td>02-950-7080</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">산학협력과</td>
+                            <td>부장</td>
+                            <td>강영천</td>
+                            <td>02-950-7081</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>정영일</td>
+                            <td>02-950-7086</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>유경화</td>
+                            <td>02-950-7074</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이영미</td>
+                            <td>02-950-7087</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>노진열</td>
+                            <td>02-950-7984</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">취업지원센터</td>
+                            <td>과장</td>
+                            <td>김홍관</td>
+                            <td>02-950-7083</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>박유리</td>
+                            <td>02-950-7084</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이경미</td>
+                            <td>02-950-7078</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">학생경력센터</td>
+                            <td>학생경력개발센터장</td>
+                            <td>정성훈</td>
+                            <td>02-950-7080</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>이미향</td>
+                            <td>02-950-7082</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 학생처 -->
+            <div id="HakSangCuh_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="6">학생처</td>
+                            <td>처장</td>
+                            <td>김진영</td>
+                            <td>02-950-7100</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>이상숙</td>
+                            <td>02-950-7101</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>민영진</td>
+                            <td>02-950-7108</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>백승희</td>
+                            <td>02-950-7102</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>육성준</td>
+                            <td>02-950-7104</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>송형진</td>
+                            <td>02-950-7104</td>
+                        </tr>
+                        <tr>
+                            <td>보건실</td>
+                            <td>계장</td>
+                            <td>이승운</td>
+                            <td>02-950-7105</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 입학처 -->
+            <div id="IpHak_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">입학과</td>
+                            <td>처장</td>
+                            <td>김태정</td>
+                            <td>02-950-7050</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>이연희</td>
+                            <td>02-950-7052</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>강은영</td>
+                            <td>02-950-7053</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>정낙영</td>
+                            <td>02-950-7054</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 사무처 -->
+            <div id="SaMu_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>사무처</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>02-950-7120</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">총무과</td>
+                            <td>팀장</td>
+                            <td>김영찬</td>
+                            <td>02-950-7127</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>노현주</td>
+                            <td>02-950-7126</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>신선미</td>
+                            <td>02-950-7124</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">회계과</td>
+                            <td>부장</td>
+                            <td>정충화</td>
+                            <td>02-950-7130</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>신진섭</td>
+                            <td>02-950-7131</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이동욱</td>
+                            <td>02-950-7132</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">구매관재과</td>
+                            <td>과장</td>
+                            <td>김성훈</td>
+                            <td>02-950-7122</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>강상선</td>
+                            <td>02-950-7123</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김병균</td>
+                            <td>02-950-7128</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6">시설관리과</td>
+                            <td>팀장</td>
+                            <td>김일만</td>
+                            <td>02-950-7145</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>이상철</td>
+                            <td>02-950-7156</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>이상만</td>
+                            <td>02-950-7153</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>김춘호</td>
+                            <td>02-950-7154</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>정승민</td>
+                            <td>02-950-7158</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>함석준</td>
+                            <td>02-950-7145</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 예비군대대 -->
+            <div id="YeBiGun_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>예비군대대</td>
+                            <td>대대장</td>
+                            <td>장원석</td>
+                            <td>02-950-7180</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 도서관 -->
+            <div id="Library_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">도서관</td>
+                            <td>도서관장</td>
+                            <td>김종국</td>
+                            <td>02-950-7160</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>김현충</td>
+                            <td>02-950-7170</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>김상희</td>
+                            <td>02-950-7162</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>전유정</td>
+                            <td>02-950-7172</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 미래교육단 -->
+            <div id="MiRae_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>미래교육단</td>
+                            <td>단장</td>
+                            <td>천종업</td>
+                            <td>02-950-7190</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">평생교육센터</td>
+                            <td>계장</td>
+                            <td>석종숙</td>
+                            <td>02-950-7194</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>최보인</td>
+                            <td>02-950-7193</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">국제교육센터</td>
+                            <td>국제교육센터장</td>
+                            <td>스캇 럼스던</td>
+                            <td>02-950-7772</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>최대운</td>
+                            <td>02-950-7192</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>최다슬</td>
+                            <td>02-950-7198</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 대학신문사 -->
+            <div id="Newspaper_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>대학신문사</td>
+                            <td>주간</td>
+                            <td>손수호</td>
+                            <td>02-950-7270</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 교육방송국 -->
+            <div id="IBS_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">교육방송국</td>
+                            <td>국장</td>
+                            <td>송화선</td>
+                            <td>02-950-7272</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>02-950-7898</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 아정미술관 -->
+            <div id="AJung_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">아정미술관</td>
+                            <td>관장</td>
+                            <td>박태호</td>
+                            <td>02-950-7310</td>
+                        </tr>
+                        <tr>
+                            <td>부관장</td>
+                            <td>천종업</td>
+                            <td>02-950-7664</td>
+                        </tr>
+                        <tr>
+                            <td>학예사</td>
+                            <td>김치연</td>
+                            <td>02-950-7331</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 학생상담센터 -->
+            <div id="SangDam_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">학생상담센터</td>
+                            <td>센터장</td>
+                            <td>이희숙</td>
+                            <td>02-950-7991</td>
+                        </tr>
+                        <tr>
+                            <td>전임상담원</td>
+                            <td>안지영</td>
+                            <td>02-950-7992</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>전소정</td>
+                            <td>02-950-7993</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 대외협력실 -->
+            <div id="DaeOe_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">대외협력실</td>
+                            <td>실장</td>
+                            <td>조진현</td>
+                            <td>02-950-7015</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>김문환</td>
+                            <td>02-950-7017</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 교수학습지원센터 -->
+            <div id="GyoSu_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">교수학습지원센터</td>
+                            <td>센터장</td>
+                            <td>한성일</td>
+                            <td>02-950-7185</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>강성진</td>
+                            <td>02-950-7187</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>최락진</td>
+                            <td>02-950-7186</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 전산센터 -->
+            <div id="JunSan_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">부서명</th>
+                            <th scope="col">직위</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">전산센터</td>
+                            <td>센터장</td>
+                            <td>도경민</td>
+                            <td>02-950-7110</td>
+                        </tr>
+                        <tr>
+                            <td>팀장</td>
+                            <td>이민호</td>
+                            <td>02-950-7111</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>김희혁</td>
+                            <td>02-950-7112</td>
+                        </tr>
+                        <tr>
+                            <td>계장</td>
+                            <td>권성열</td>
+                            <td>02-950-7113</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>우동규</td>
+                            <td>02-950-7115</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 수위실 -->
+            <div id="SuWe_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">경비실명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="10">수위실</td>
+                            <td>정문</td>
+                            <td>02-950-7210</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>후문</td>
+                            <td>02-950-7211</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>도서관</td>
+                            <td>02-950-7212</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>2공학관</td>
+                            <td>02-950-7213</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>1공학관</td>
+                            <td>02-950-7214</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>인관</td>
+                            <td>02-950-7215</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>덕관</td>
+                            <td>02-950-7216</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>은봉관</td>
+                            <td>02-950-7217</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>연지스퀘어</td>
+                            <td>02-950-7218</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>주차</td>
+                            <td>02-950-7219</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 명예교수실 -->
+            <div id="MyoungYe_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">실명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>명예교수실</td>
+                            <td>명예교수실</td>
+                            <td>02-950-7075</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 총동창회 -->
+            <div id="DongChang_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">실명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>총동창회</td>
+                            <td>총동창회</td>
+                            <td>02-950-7107</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 학생기구 -->
+            <div id="Student_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">단체명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">학생기구</td>
+                            <td>학생회</td>
+                            <td>02-950-7252</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>대의원실</td>
+                            <td>02-950-7253</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>동연회</td>
+                            <td>02-950-7254</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>학연회</td>
+                            <td>02-950-7255</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 편의시설 -->
+            <div id="PyeonUi_list" class="office">
+                <table class="rule_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">시설명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">편의시설</td>
+                            <td>만화영상실</td>
+                            <td>02-950-7971</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>서점</td>
+                            <td>02-950-7221</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>복사실</td>
+                            <td>02-950-7223</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>학생식당</td>
+                            <td>02-950-7224</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>교직원식당</td>
+                            <td>02-950-7225</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- *** 맨 위로 *** -->
+            <!-- http://cofs.tistory.com/188 -->
+            <!--
+        <div id = "pb_GO_Top" style="width:110px">
+        	<a id="pb_Move_Top_Button" href="#" data-role="button" data-icon="arrow-u" data-theme="b"> TOP </a>
+        </div>
+        -->
+
+        </div>
+
+        <!-- 하단 -->
+        <?php include "../footer.html"?>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+< 행정사무실 Index >
+- 법인 : BubIn 
+- 비서실 : BiSeo
+- 교목실 : GyoMok
+- 국제협력센터 : GukJe
+- 창업지원단 : ChangEop
+- 사회봉사단 : BongSa
+- 기획처 : KiHoek
+- 교무처 : GyoMu
+- 산학협력처(단) : SanHak
+- 학생처 : HakSangCuh
+- 입학처 : IpHak
+- 사무처 : SaMu
+- 예비군대대 : YeBiGun
+- 도서관 : Library
+- 미래교육단 : MiRae
+- 대학신문사 : Newspaper
+- 교육방송국 : IBS
+- 아정미술관 : AJung
+- 학생상담센터 : SangDam
+- 대외협력실 : DaeOe
+- 교수학습지원센터 : GyoSu
+- 전산센터 : JunSan
+- 수위실 : SuWe
+- 명예교수실 : MyoungYe
+- 총동창회 : DongChang
+- 학생기구 : Student
+- 편의시설 : PyeonUi
+
+< 학과 Index >
+- 컴퓨터전자공학과 : ComZun
+- 메카트로닉스과 : Meca
+- 방송영상미디어학과 : BroadCasing
+- 정보통신공학과 : JungTong
+- 건축학과 : GunChuk
+- 디지털산업디자인학과 : DiSanDi
+- 기계설계학과 : SulGye
+- 기계자동차학과 : Car
+- 토목환경공학과 : ToMok
+- 건설정보공학과 : GunJung
+- 산업경영공학과 : SanGyung
+- 컴퓨터소프트웨어학과 : ComSo
+- 주얼리디자인학과 : Jewelry
+- 공간장식도자디자인학과 : GongDoDi
+- 멀티미디어디자인학과 : MuiltyMedia
+- 만화.애니메이션학과 : Ani
+- 시각디자인과 : SiGak
+- 실내건축과 : SilGun
+- 영어과 : English
+- 비서과 : Secretary
+- 방송연예과 : BangYeon
+- 관광서비스경영학과 : Service
+- 중국어과 : Chinese
+- 도시환경디자인과 : DoHanDi
+- 일본어과 : Japanese
+- 사회복지학과 : BokJi
+- 세무회계학과 : SaeMu
+- 학부 : HakBu
+-->

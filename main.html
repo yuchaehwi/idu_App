@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>idu App Main</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="jquery/jquery-mobile1.4.5.css" />
+    <script src="jquery/jquery1.11.1.js"></script>
+    <script src="jquery/jquery-mobile1.4.5.js"></script>
+    <script src="total.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".login").click(function () {
+                $("#menu").addClass("open");
+            });
+
+            $(".close").click(function () {
+                $("#menu").removeClass("open");
+            });
+
+            $('.mask').click(function () {
+                $('#menu').hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div data-role="page" id="indexPage">
+        <div class="header" data-role="header" data-position="fixed">
+            <div class="head_bt">
+                <img class="back" src="images/nothing.png" />
+                <img class="head_logo" src="images/head_logo.png" />
+                <!-- <img class="login" src="images/login.png" /> -->
+                <!-- <div class="login_char">Login</div> -->
+
+                <div id="menu">
+                    <img class="close" src="images/close.png" />
+                    <div class="logo">
+                        <img class="induk_logo" src="images/logo_signature.png" alt="" />
+                    </div>
+
+
+                    <div class="login_form">
+                        <form name="form1" method="get" action="idcard_main.html">
+                            <input type="text" data-role="none" name="hack" size="20" placeholder="교직원은 ID, 학생은 학번"
+                                value=""><br>
+                            <input type="password" data-role="none" name="pw" size="20" placeholder="학사정보시스템 비밀번호"
+                                value=""><br>
+                            <input type="submit" data-role="none" value="로그인">
+                        </form>
+                    </div>
+
+                    <p class="notice"><br>
+                        ※ 교직원 및 학생은 학사정보시스템의 학번, 패스워드로 로그인하시면 됩니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="content" class="ui-content">
+            <div class="grid">
+                <div class="grid-block-a" onclick="move('Notice/notice_main_2.html');">
+                    <h3 class="title_style">공지사항</h3>
+                </div>
+                <div class="grid-block-b" onclick="move('Info/info_main.html');">
+                    <h3 class="title_style">학교소개</h3>
+                </div>
+                <div class="grid-block-c" onclick="move('Notice/major_main.html');">
+                    <h3 class="title_style">학과소개</h3>
+                </div>
+                <div class="grid-block-d" onclick="move('Notice/circles.html');">
+                    <h3 class="title_style">동아리소개</h3>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="footer" data-role="footer">
+            <div class="footer_tab">
+                <ul class="footer_ul">
+                    <li class="footer_li" onclick="move('Notice/notice_main_2.html');">
+                        <img class="footer-icon-image-a" src="images/menu_notice.png" />
+                        <p class="footer_p">공지사항</p>
+                    </li>
+                    <li class="footer_li" onclick="move('PhoneBook/phonebook_main.html');">
+                        <img class="footer-icon-image-b" src="images/menu_phonebook.png" />
+                        <p class="footer_p">전화번호부</p>
+                    </li>
+                    <li class="footer_li" onclick="move('Calendar/calendar_main.html');">
+                        <img class="footer-icon-image-c" src="images/menu_calendar.png" />
+                        <p class="footer_p1">학사일정</p>
+                    </li>
+                    <li class="footer_li" onclick="move('CampusMap/map_main.html');">
+                        <img class="footer-icon-image-d" src="images/menu_campus.png" />
+                        <p class="footer_p">캠퍼스 안내</p>
+                    </li>
+                    <li class="footer_li" onclick="move('Notice/FAQ.html');">
+                        <img class="footer-icon-image-e" src="images/menu_faq.png" />
+                        <p class="footer_p">FAQ</p>
+                    </li>
+                </ul>
+                <!--
+               <p class="foot_p">01878 서울시 노원구 초안산로 12 인덕대학교 <br/>
+               TEL 02-950-7000 FAX 02-906-5340</p>
+            -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

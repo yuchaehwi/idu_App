@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile 웹 응용 프로그램</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <link rel="stylesheet" href="../header.css"/>        
+	<link rel="stylesheet" href="../footer.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+<body> 
+	<div data-role="page">
+      <?php include "../header.html"?>
+        <div data-role="content">
+        	<img src="images/logo_signature.png" alt="" />
+            <form name="form1" method="post" action="#">
+            <input type="text" name = "hack" size="20" placeholder="교직원은 ID, 학생은 학번" value=""><br>
+            <input type="password" name = "pw" size="20" placeholder="학사정보시스템 비밀번호" value=""><br>
+            <input type="submit" value="로그인">
+            </form>
+        </div>
+        <span>교직원 및 학생은 학사정보시스템의 학번, 패스워드로 로그인하시면 됩니다.</span>
+        <div class="footer" data-role="footer" data-theme="c" data-position="fixed">
+        	<h2>인덕대학교</h2>
+        </div>
+    </div>      
+</body>
+</html>

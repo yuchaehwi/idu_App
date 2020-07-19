@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+.date-sunday .ui-state-default { color:#FF5A5A; font-weight:bold; }
+.date-saturday .ui-state-default { color:#5AAEFF; font-weight:bold; }
+.date-holiday .ui-state-default { color:red; font-weight:bold; }
+.date-schedule .ui-state-default { 
+	font-weight:bold;
+	background-image:url('img/icon.png');
+	background-size:50px;
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+	
+.date-schedule2 .ui-state-default { 
+	color:#FF5A5A;
+	font-weight:bold;
+	background-image:url('img/icon.png');
+	background-size:50px;
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+	
+.date-schedule3 .ui-state-default { 
+	color:#5AAEFF;
+	font-weight:bold;
+	background-image:url('img/icon.png');
+	background-size:50px;
+	background-repeat:no-repeat;
+	background-position:right;
+   }
+
+   @media (min-width : 560px) and (max-width : 1199px){
+      .date-schedule .ui-state-default{
+         background-size:60px;
+      }
+   }
+   @media (min-width : 481px) and (max-width : 559px){
+      .date-schedule .ui-state-default{
+         background-size:50px;
+      }
+   }
+   @media (min-width : 360px) and (max-width : 480px){
+      .date-schedule .ui-state-default{
+         background-size:40px;
+      }
+   }

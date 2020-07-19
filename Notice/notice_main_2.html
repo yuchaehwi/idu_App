@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>jQuery Mobile 웹 응용 프로그램</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <link rel="stylesheet" href="../header.css" />
+   <link rel="stylesheet" href="../footer.css" />
+   <link rel="stylesheet" href="notice_main.css?v=3" />
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+   <link rel="stylesheet" href="menuE.css" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <script src="../total.js"></script>
+   <script src="notice.js"></script>
+</head>
+
+<body>
+   <div data-role="page">
+      <?php include "../header.html"?>
+
+      <div class="content" data-role="content">
+         <div class="title">
+            Notice
+         </div>
+         <ul class="notice" id="notice"></ul>
+
+         <div class="notice-content" id="noticeContent">
+            
+         </div>
+      </div>
+
+      <?php include "../footer.html"?>
+   </div>
+</body>
+
+</html>

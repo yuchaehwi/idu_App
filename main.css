@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face { /* 인덕B체를 다운로드 받아 설정 */
+	font-family: IndukFont; 
+	src: url('IndukB.ttf');
+	font-weight: bold; /* bold 스타일은 이 폰트로 등록 */	
+}
+
+.header{
+	background-color:#ae1e4c;
+	border: 1px solid #ae1e4c;
+}
+
+p{
+	text-align:center;
+}
+
+.title_style {
+   font-size : 25px;
+	color: white;
+}
+
+.title_style1 { 
+	color: white;
+	margin-top: 1%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.ui-content {
+	text-align: center;
+}
+
+.grid {
+	padding: 5% 0% 5% 0%;
+	width: 95%;
+	line-height: 500%;
+	margin: auto;
+	text-decoration: none;
+	color: white;
+}
+
+.grid > div{
+   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+   margin: 0.5%;
+   width: 99%;
+	height: auto;
+	display: inline-block;
+   border-radius: 5px;
+}
+
+.grid-block-a
+{
+	background-color: #2f8df6;
+}
+
+.grid-block-b {
+	background-color: #ffcc00;
+}
+
+.grid-block-c {
+	background-color: #03e1af;
+}
+
+.grid-block-d {
+	background-color: #e74c3c;
+}
+
+.grid-block-a:hover, .grid-block-b:hover, .grid-block-c:hover, .grid-block-d:hover {
+	opacity: 0.5;
+}
+
+.notice{
+   font-size: 12px;
+}
+
+@media (min-width : 560px) and (max-width : 1199px){
+   .title_style{
+      font-size : 30px;
+   }
+}
+@media (min-width : 481px) and (max-width : 559px){
+   .title_style{
+      font-size : 25px;
+   }
+}
+@media (min-width : 360px) and (max-width : 480px){
+   .title_style{
+      font-size : 20px;
+   }
+}

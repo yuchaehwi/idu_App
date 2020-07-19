@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title> </title>
+   <!-- 화면 표현 영역 설정 -->
+   <meta name="viewport" content="width=device-width, height-device-height, initial-scale=1, minimum-scale=1.0">
+
+   <!-- 외부 CSS 연결 -->
+   <link rel="stylesheet" href="circles.css" />
+   <link rel="stylesheet" href="../header.css" />
+   <link rel="stylesheet" href="../footer.css" />
+   <link rel="stylesheet" href="../jquery/jquery-mobile1.4.5.css" />
+   <script src="../total.js"></script>
+   <script src="phonebook_javascript.js"></script>
+   <script src="../jquery/jquery1.11.1.js"></script>
+   <script src="../jquery/jquery-mobile1.4.5.js"></script>
+
+</head>
+
+<body>
+
+
+
+   <div data-role="page" id="page">
+      <!-- 상단 -->
+      <?php include "../header.html"?>
+
+      <!-- 중단 -->
+      <div class="content" data-role="content">
+
+         <div class="line1">
+            <span onclick="move('circles.html');">일반동아리</span><span onclick="move('found_circles.html');">창업동아리</span>
+         </div>
+
+         <div class="intro02_wrap01">
+            <img src="img/bar.png" class="bar">
+            <p class="intro_circles">일반동아리 현황</p>
+            <table class="rule_table" summary="일반동아리 현황 정보이며 연번, 동아리명, 인원, 지도교수 및 회장 을 제공합니다.">
+               <thead>
+                  <tr>
+                     <th scope="col" class="th_1">연번</th>
+                     <th scope="col" class="th_2">동아리명</th>
+                     <th scope="col" class="th_3">인원</th>
+                     <th scope="col" class="th_4">지도교수 및 회장</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="td_1">1</td>
+                     <td class="td_1">고적답사</td>
+                     <td class="td_1">102</td>
+                     <td class="td_4">지도교수 : 김형대(실내건축디자인과)<br>회장 : 박한솔(비서과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">2</td>
+                     <td class="td_1">구조설계</td>
+                     <td class="td_1">51</td>
+                     <td class="td_4">지도교수 : 김두준(건설정보과)<br>회장 : 이현빈(건설정보과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">3</td>
+                     <td class="td_1">빛그림</td>
+                     <td class="td_1">39</td>
+                     <td class="td_4">지도교수 : 최준기(비서과)<br>회장 : 마신해(비서과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">4</td>
+                     <td class="td_1">소리사랑</td>
+                     <td class="td_1">52</td>
+                     <td class="td_4">지도교수 : 최종훈(일본어과)<br>회장 : 이선훈(메카트로닉스과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">5</td>
+                     <td class="td_1">영상제작회</td>
+                     <td class="td_1">27</td>
+                     <td class="td_4">지도교수 : 방극준(방송영상미디어과)<br>회장 : 박슬기(방송영상미디어과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">6</td>
+                     <td class="td_1">영화사랑</td>
+                     <td class="td_1">88</td>
+                     <td class="td_4">지도교수 : 강문상(메카트로닉스과)<br>회장 : 양희길(기계설계과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">7</td>
+                     <td class="td_1">이루리</td>
+                     <td class="td_1">37</td>
+                     <td class="td_4">지도교수 : 이경열(주얼리디자인과)<br>회장 : 김진수(테크노경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">8</td>
+                     <td class="td_1">C.C.C</td>
+                     <td class="td_1">32</td>
+                     <td class="td_4">지도교수 : 표성배(컴퓨터소프트웨어과)<br>회장 : 황인영(일본어과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">9</td>
+                     <td class="td_1">E.C.C</td>
+                     <td class="td_1">48</td>
+                     <td class="td_4">지도교수 : 조용욱(테크노경영과)<br>회장 : 이상은(테크노경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">10</td>
+                     <td class="td_1">F&amp;F</td>
+                     <td class="td_1">44</td>
+                     <td class="td_4">지도교수 : 오재성(디지털산업디자인과)<br>회장 : 한규일(디지털산업디자인과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">11</td>
+                     <td class="td_1">FC.SKY</td>
+                     <td class="td_1">63</td>
+                     <td class="td_4">지도교수 : 임석진(테크노경영과)<br>회장 : 임상윤(건설정보과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">12</td>
+                     <td class="td_1">FREE BIRD</td>
+                     <td class="td_1">60</td>
+                     <td class="td_4">지도교수 : 김민형(메카트로닉스과)<br>회장 : 황보소영(만화영상애니메이션과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">13</td>
+                     <td class="td_1">I.A.B.A</td>
+                     <td class="td_1">65</td>
+                     <td class="td_4">지도교수 : 정태은(메카트로닉스과)<br>회장 : 고정현(메카트로닉스과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">14</td>
+                     <td class="td_1">I.COM</td>
+                     <td class="td_1">55</td>
+                     <td class="td_4">지도교수 : 김훈학(컴퓨터전자과)<br>회장 : 김지영(테크노경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">15</td>
+                     <td class="td_1">I.D.Technic</td>
+                     <td class="td_1">56</td>
+                     <td class="td_4">지도교수 : 윤석우(중국어과)<br>회장 : 신지웅(메카트로닉스과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">16</td>
+                     <td class="td_1">라르고</td>
+                     <td class="td_1">26</td>
+                     <td class="td_4">지도교수 : 유근선(비서과)<br>회장 : 최재원(시각디자인과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">17</td>
+                     <td class="td_1">사나래</td>
+                     <td class="td_1">25</td>
+                     <td class="td_4">지도교수 : 이상봉(방송영상미디어과)<br>회장 : 윤지희(주얼리디자인과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">18</td>
+                     <td class="td_1">와인아이</td>
+                     <td class="td_1">90</td>
+                     <td class="td_4">지도교수 : 정용해(관광레저경영과)<br>회장 : 박경수(관광레저경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">19</td>
+                     <td class="td_1">한울림</td>
+                     <td class="td_1">51</td>
+                     <td class="td_4">지도교수 : 표창률(기계자동차과)<br>회장 : 최동환(관광레저경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">20</td>
+                     <td class="td_1">인덕산악회</td>
+                     <td class="td_1">26</td>
+                     <td class="td_4">지도교수 : 김영득(기계자동차과)<br>회장 : 김동환(테크노경영과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">21</td>
+                     <td class="td_1">가까이</td>
+                     <td class="td_1">66</td>
+                     <td class="td_4">지도교수 : 이희숙(주얼리디자인과)<br>회장 : 김규민(주얼리디자인과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">22</td>
+                     <td class="td_1">I.B.C</td>
+                     <td class="td_1">27</td>
+                     <td class="td_4">지도교수 : 고상연(세무회계과)<br>회장 : 이은서(세무회계과)</td>
+                  </tr>
+                  <tr>
+                     <td class="td_1">23</td>
+                     <td class="td_1">코코로</td>
+                     <td class="td_1">57</td>
+                     <td class="td_4">지도교수 : 송혜선(일본어과)<br>회장 : 박장현(컴퓨터전자과)</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+      <!-- 하단 -->
+      <?php include "../footer.html"?>
+   </div>
+
+</body>
+
+</html>

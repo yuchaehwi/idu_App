@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>무제 문서</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="major_main.css" />
+    <link rel="stylesheet" href="../header.css"/>        
+	<link rel="stylesheet" href="../footer.css"/>
+    <link rel="stylesheet" href="../jquery/jquery-mobile1.4.5.css" />
+    <script src="../jquery/jquery1.11.1.js"></script>
+    <script src="../jquery/jquery-mobile1.4.5.js"></script>
+   <script src="../total.js"></script>
+
+	<script type="text/javascript" src="major_javascript.js"></script>
+
+</head>
+<body>
+
+    <div data-role="page" id="page">
+      <?php include "../header.html"?>
+        
+        <div class="content" data-role="content">
+        <div class="hak_info">
+             <div class="eng">
+             	<p class="hak_title1">공학부</p> <hr class="hr1" />  
+                <div class="a">   
+                   <p class="grade"> <img class="cir" src="img/cir1.png" /> 2년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('sulGye.html');">기계설계학과</li>
+                            <li class="grade_li" onclick="move('gunJung.html');">건설정보공학과</li>
+                        </ul>
+                </div>
+                <div class="b">  
+                   <p class="grade"> <img class="cir" src="img/cir1.png" /> 3년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('gunChuk.html');">건축학과</li>
+                            <li class="grade_li" onclick="move('car.html');">자동차학과</li>
+                            <li class="grade_li" onclick="move('comZun.html');">컴퓨터전자공학과</li>
+                            <li class="grade_li" onclick="move('toMok.html');">토목환경공학과</li>
+                            <li class="grade_li" onclick="move('sanGyung.html');">산업경영공학과</li>
+                            <li class="grade_li" onclick="move('comSo.html');">컴퓨터소프트웨어학과</li>
+                            <li class="grade_li" onclick="move('broadCasting.html');">방송영상미디어학과</li>
+                            <li class="grade_li" onclick="move('meca.html');">메카트로닉스과</li>
+                            <li class="grade_li" onclick="move('jungTong.html');">정보통신공학과</li>
+                        </ul>
+                </div>
+                        
+                <div class="c">   
+                   <p class="grade"> <img class="cir" src="img/cir1.png" /> 전공심화과정</p>                    
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('advGunJung.html');">건설정보학과</li>
+                            <li class="grade_li" onclick="move('advGunChuk.html');">건축학과</li>
+                            <li class="grade_li" onclick="move('advToMok.html');">토목환경공학과</li>
+                            <li class="grade_li" onclick="move('advMeca.html');">메카트로닉스공학과</li>
+                            <li class="grade_li" onclick="move('advJungTong.html');">정보통신공학과</li>
+                            <li class="grade_li" onclick="move('advSulGye.html');">기계설계공학과</li>
+                            <li class="grade_li" onclick="move('advSanGyung.html');">산업경영공학과</li>
+                            <li class="grade_li" onclick="move('advComSo.html');">컴퓨터소프트웨어학과</li>
+                            <li class="grade_li" onclick="move('advBroadCasting.html');">방송영상미디어학과</li>
+                        </ul>
+                </div>                  
+             </div>
+             
+             <div class="des"> 
+             	<p class="hak_title2">디자인예술학부</p> <hr class="hr2" />
+                <div class="a">  
+                	 <p class="grade"> <img class="cir" src="img/cir2.png" /> 2년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('muiltyMedia.html');">멀티미디어디자인학과</li>
+                            <li class="grade_li" onclick="move('gongDoDi.html');">공간장식도자디자인학과</li>
+                            <li class="grade_li" onclick="move('ani.html');">만화애니메이션학과</li>
+                            <li class="grade_li" onclick="move('doHanDi.html');">도시환경디자인과</li>
+                        </ul>
+                </div> 
+                <div class="b">   
+                   <p class="grade"> <img class="cir" src="img/cir2.png" /> 3년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('diSanDi.html');">디지털산업디자인학과</li>
+                            <li class="grade_li" onclick="move('siGak.html');">시각디자인과</li>
+                            <li class="grade_li" onclick="move('jewerly.html');">주얼리디자인학과</li>
+                            <li class="grade_li" onclick="move('silGun.html');">>실내건축과</li>
+                            <li class="grade_li" onclick="move('bangYeon.html');">방송연예과</li>
+                        </ul>
+                </div>        
+                <div class="c">   
+                <p class="grade"> <img class="cir" src="img/cir2.png" /> 전공심화과정</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('advJewely.html');">주얼리디자인학과</li>
+                            <li class="grade_li" onclick="move('advDiSanDi.html');">디지털산업디자인학과</li>
+                            <li class="grade_li" onclick="move('advMuiltyMedia.html');">멀티미디어디자인학과</li>
+                            <li class="grade_li" onclick="move('advGongDoDi.html');">공간장식도자디자인학과</li>
+                            <li class="grade_li" onclick="move('advAni.html');">만화애니메이션학과</li>
+                        </ul>  
+                </div>        
+              </div>
+              
+              <div class="lan">      
+                <p class="hak_title3">어문사회학부</p> <hr class="hr3" />
+                <div class="a">    
+                   <p class="grade"> <img class="cir" src="img/cir3.png" /> 2년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('english.html');">영어과</li>
+                            <li class="grade_li" onclick="move('chinese.html');">중국어과</li>
+                            <li class="grade_li" onclick="move('japanese.html');">일본어과</li>
+                            <li class="grade_li" onclick="move('bokJi.html');">사회복지학과</li>
+                            <li class="grade_li" onclick="move('saeMu.html');">세무회계학과</li>
+                        </ul>
+                </div>
+                <div class="b">   
+                   <p class="grade"> <img class="cir" src="img/cir3.png" /> 3년제</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('secretary.html');">비서학과</li>
+                            <li class="grade_li" onclick="move('service.html');">관광서비스경영학과</li>
+                        </ul>
+                </div>
+                <div class="c"> 
+                <p class="grade"> <img class="cir" src="img/cir3.png" /> 전공심화과정</p>
+                        <ul class="grade_ul">
+                            <li class="grade_li" onclick="move('advService.html');">관광서비스경영학과</li>
+                            <li class="grade_li" onclick="move('advChinese.html');">중국어학과</li>
+                        </ul>  
+                </div>    
+              </div>  
+           </div> 
+        </div>
+        
+        <?php include "../footer.html"?>
+    </div>
+
+</body>
+</html>

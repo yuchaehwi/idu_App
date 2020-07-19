@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face { /* 인덕B체를 다운로드 받아 설정 */
+	font-family: IndukFont; 
+	src: url('../font/IndukB.ttf');
+	font-weight: bold; /* bold 스타일은 이 폰트로 등록 */	
+}
+
+.bar1{
+	width:4%;
+}
+
+.bar2{
+	width:8%;
+}
+
+.content{
+	margin: 0% 5% 0% 5%;
+}
+
+.content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.content li{
+	float:left;
+   border: solid 1px #e7e7e7;
+   box-sizing: border-box;
+	width:24.6%;
+	line-height:300%;
+}
+
+.content li a {
+	border: solid 1px #e7e7e7;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+	font-size:15px;
+}
+
+.content li a:hover {
+	border: solid 1px #ae1e4c;
+	color:#ae1e4c;
+}
+
+.title {
+	font-size:25px;
+	font-weight: bold;
+	margin-top:0%;
+}
+
+.intro02_img{
+	width:100%;
+}
+
+.gun1{
+	float:left;
+	width: 47%;
+}
+
+.space{
+	float:left;
+	width:3%;
+}
+
+
+.gun2{
+	float:left;
+	width: 47%;
+}
+
+.goal{
+	text-align:center;
+}
+
+.goal_img{
+	width:95%;
+}
+
+.ttl{
+	font-size:15px;
+	color:#5672b3
+}
+
+.vision1{
+	margin:0 auto;
+	text-align:center;
+}	
+
+.vision_tab02_img{
+	width: 75%;
+}
+
+.vision_tab02_img1{
+	width:50%;
+}
+
+.tab1_tit1{
+	float:left;
+}
+
+.tab1_tit2{
+	float:left;
+}
+
+.tab1{
+	margin:0 auto; 
+}
+
+.tab2{
+	margin:0 auto; 
+}
+
+.intro04_img{
+	width:97%
+}
+
+.Aegyplus1{
+	float: left; 
+	width: 25%
+}
+
+.Aegyplus2{
+	margin-top:-10px;
+	float: left; 
+	width: 75%
+}
+
+.Magnalla1{
+	float: left; 
+	width: 25%
+}
+
+.Magnalla2{
+	float: left; 
+	width: 75%
+}
+
+@media (min-width : 560px) and (max-width : 1199px){
+   .content li a {
+      font-size : 13px;
+   }
+   p {
+      font-size : 14px;
+   }
+   .title {
+      font-size : 16px;
+   }
+   .tab1{
+      font-size : 14px;
+   }
+   .tab2{
+      font-size : 14px;
+   }
+}
+@media (min-width : 481px) and (max-width : 559px){
+   .content li a {
+      font-size : 11px;
+   }
+   p {
+      font-size : 14px;
+   }
+   .title {
+      font-size : 16px;
+   }
+   .tab1{
+      font-size : 14px;
+   }
+   .tab2{
+      font-size : 14px;
+   }
+}
+@media (min-width : 360px) and (max-width : 480px){
+   .content >ul > li{
+      width : 50%;
+   }
+   .content li a {
+      font-size : 13px;
+   }
+   p {
+      font-size : 13px;
+   }
+   .title {
+      font-size : 15px;
+   }
+   .tab1{
+      font-size : 13px;
+   }
+   .tab2{
+      font-size : 13px;
+   }
+}

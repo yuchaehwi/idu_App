@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	margin: -1% 1% 1% 1%;
+}
+
+.ul_college {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.li_college{
+	float:left;
+	border: solid 1px #e7e7e7;
+	width:33.1%;
+   line-height:300%;
+   box-sizing: border-box;
+}
+
+.select_college{
+   background-color: #e7e7e7;
+   color : #fff;
+}
+
+.li_college a {
+	border: solid 1px #e7e7e7;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+	font-size:15px;
+}
+
+.li_college a:hover {
+	border: solid 1px #ae1e4c;
+	color:#ae1e4c;
+}
+
+
+a{
+	text-decoration:none;
+}
+
+.title{
+	font-size:25px;
+	color: #000000;
+}
+
+.tab{
+	margin-bottom:2%;
+}
+
+.icon1, .icon3{
+	width:4%;
+	vertical-align:middle;
+	margin-top:0.4%;
+}
+
+.icon2{
+	width:3.8%;
+	vertical-align:middle;
+	margin-top:0.4%;
+}
+
+.major{
+	color: #0080C0;
+	font-size:20px;
+}
+
+a{
+	color:#000000;
+}
+
+.table_hak {
+	width:100%;
+	height:auto;
+}
+
+.td_hak{
+	padding: 0% 1% 1% 1%;
+}
+
+.td_hak a:hover{
+	color:#ae1e4c;
+}
+
+.table_hakinfo{
+	width:100%;
+	height:auto;
+	vertical-align:middle;
+}
+
+.td_hakinfo{
+	width:50%;
+}
+
+.ul_hak {
+	background-color:#FFFFFF;
+	list-style-type: none;
+	padding: 1% 0% 0% 0%;
+}
+
+.li_hak{
+	float: left;
+	border-top: 1px solid #bcbcbc;
+	border-left: 1px solid #bcbcbc;
+	border-right: 1px solid #bcbcbc;
+   padding: 1% 2% 1% 2%;
+   display: block;
+	font-weight: bold;
+    color: #000000;
+    text-align: center;
+	font-size:15px;
+}
+
+.li_hak_click{
+	border-top: 1px solid #9F273F;
+	border-left: 1px solid #9F273F;
+	border-right: 1px solid #9F273F;
+	color: #9F273F;
+}
+
+.li_hr{
+	margin-top:3.5%;
+}
+
+.hak_content1{
+   font-size:20px;
+   font-weight: 500;
+   color:#9F273F;
+}
+
+.hak_content2{
+   margin-top : -10px;
+   padding : 0 0 0 2%;
+   font-size: 14px;
+   color:#454545;
+   word-break: keep-all;
+}
+
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell; 
+	padding: 1% 1% 1% 1%;
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.cell1 {
+	display: table-cell; 
+	padding: 1% 1% 1% 1%;
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.col1 {
+   font-weight: bold;
+	text-align:center;
+   width: 17%;
+	color:#454545;
+}
+
+.col2 {
+	color:#454545;
+}
+
+.timetable_head{
+	padding-top:2%;
+	font-size: 25px;
+}
+
+.timetable_title{
+	font-size:20px;
+	color:#9F273F;
+}
+
+.timetable_content{
+	border-collapse:collapse;
+	margin-top:-1%;
+}
+
+thead .th_1{
+	width:6%;
+	line-height:250%;
+	background-color:#f5f1f1;
+	border-top: solid 1px #785f5f;
+	border-bottom: solid 1px #785f5f;
+   border-right: solid 1px #b7b7b7;
+   font-size : 14px;
+}
+
+thead .th_2{
+	width:17%;
+	background-color:#f5f1f1;
+	border-top: solid 1px #785f5f;
+	border-bottom: solid 1px #785f5f;
+   border-right: solid 1px #b7b7b7;
+   font-size : 14px;
+}
+
+thead .th_3{
+	background-color:#f5f1f1;
+	border-top: solid 1px #785f5f;
+   border-bottom: solid 1px #785f5f;
+   font-size : 14px;
+}
+
+tbody .td_1, .td_2{
+	padding: 1% 0% 1% 0%;
+	text-align:center;
+	border-right: solid 1px #b7b7b7;
+	border-bottom: solid 1px #b7b7b7;
+}
+
+tbody .td_3{
+	padding: 1% 0% 1% 0%;
+	padding-left:1%;
+	border-bottom: solid 1px #b7b7b7;
+}
+
+tbody .td_4{
+	padding: 1% 0% 1% 0%;
+}
+
+.intro_content{
+   margin-top : 30px;
+	border-collapse:collapse;
+	width:100%;
+}
+
+.intro_content>thead>tr>td{
+   background-color:#f5f1f1;
+	border-top: solid 1px #785f5f;
+	border-bottom: solid 1px #785f5f;
+   border-right: solid 1px #b7b7b7;
+   box-sizing: border-box;
+}
+.intro_content>tbody>tr>td{
+   border-right: solid 1px #b7b7b7;
+	border-bottom: solid 1px #b7b7b7;
+}
+.intro_content>tbody>tr>td:last-child{
+   border-right: none;
+}
+thead{ 
+   font-weight: bold;
+   font-size: 15px;
+   
+}
+
+thead .intro_td1, .intro_td2, .intro_td3, .intro_td4{
+	text-align:center;
+}
+
+thead .intro_td1, .intro_td2{
+	width:15%;
+}
+
+thead .intro_td3{
+	width:35%;
+}
+
+thead .intro_td4{
+   width:40%;
+   
+}
+
+tbody{
+   font-size : 14px;
+}
+
+tbody .intro_td1, .intro_td2, .intro_td3, .intro_td4{
+	text-align:center;
+	padding: 1% 0% 1% 0%;
+   border-bottom: solid 1px #b7b7b7;
+}
+.com{
+   width : 25px;
+   height : 25px;
+   float:left;
+}
+.hakinfo{
+   margin : 0px;
+   padding : 0px;
+   list-style: none;
+   font-size: 14px;
+}
+.hakinfo > li{
+   margin-bottom : 5px;
+}
+.hakinfo > li > img{
+   vertical-align: top;
+   margin-top : -1px;
+}
+
+@media (min-width : 560px) and (max-width : 1199px){
+   .hak_content1{
+      font-size : 18px;
+   }
+   .hak_content2{
+      font-size: 16px;
+   }
+   .cell{
+      font-size : 16px;
+   }
+   .cell1{
+      font-size : 16px;
+   }
+   .col1{
+      width : 15%;
+   }
+   .li_hak{
+      font-size : 18px;
+   }
+   .hakinfo > li{
+      font-size : 18px;
+   }
+   .major{
+      font-size : 25px;
+   }
+   .timetable_title{
+      font-size : 18px;
+   }
+   thead .th_1{
+      width : 10%;
+      font-size : 16px;
+   }
+   .td_2, .td_3{
+      font-size : 16px;
+      word-break: keep-all;
+   }
+   .intro_td1, .intro_td2, .intro_td3, .intro_td4{
+      font-size : 16px;
+   }
+}
+@media (min-width : 481px) and (max-width : 559px){
+   .hak_content1{
+      font-size : 16px;
+   }
+   .hak_content2{
+      font-size: 14px;
+   }
+   .cell{
+      font-size : 14px;
+   }
+   .cell1{
+      font-size : 14px;
+   }
+   .col1{
+      width : 15%;
+   }
+   .li_hak{
+      font-size : 16px;
+   }
+   .hakinfo > li{
+      font-size : 16px;
+   }
+   .major{
+      font-size : 22px;
+   }
+   .timetable_title{
+      font-size : 16px;
+   }
+   thead .th_1{
+      width : 10%;
+      font-size : 14px;
+   }
+   .td_2, .td_3{
+      font-size : 14px;
+      word-break: keep-all;
+   }
+   .intro_td1, .intro_td2, .intro_td3, .intro_td4{
+      font-size : 14px;
+   }
+}
+@media (min-width : 360px) and (max-width : 480px){
+   .hak_content1{
+      font-size : 14px;
+   }
+   .hak_content2{
+      font-size: 12px;
+   }
+   .cell{
+      font-size : 12px;
+   }
+   .cell1{
+      font-size : 12px;
+   }
+   .col1{
+      width : 20%;
+   }
+   .li_hak{
+      font-size : 14px;
+   }
+   .hakinfo > li{
+      font-size : 14px;
+   }
+   .major{
+      font-size : 20px;
+   }
+   .timetable_title{
+      font-size : 14px;
+   }
+   thead .th_1{
+      width : 10%;
+      font-size : 12px;
+   }
+   .td_2, .td_3{
+      font-size : 12px;
+      word-break: keep-all;
+   }
+   .intro_td1, .intro_td2, .intro_td3, .intro_td4{
+      font-size : 12px;
+   }
+}

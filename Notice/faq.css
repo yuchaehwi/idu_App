@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.content{
+	margin: 1% 1% 1% 1%;
+}
+
+.hak_menu{
+	padding-bottom:2%;
+}
+
+.hak_menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.hak_menu > ul > li{
+	float:left;
+	border: solid 1px #e7e7e7;
+	width:25%;
+   line-height:250%;
+   box-sizing: border-box;
+}
+
+.hak_menu > ul > li > a {
+	border: solid 1px #e7e7e7;
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+	font-size:15px;
+}
+
+.hak_menu > ul > li > a:hover {
+	border: solid 1px #ae1e4c;
+	color:#ae1e4c;
+}
+
+
+.faq{
+	border: solid 1px #e7e7e7;
+	width:95%;
+   line-height:400%;
+   box-sizing: border-box;color: #000000;
+   text-align: center;
+   text-decoration: none;
+   font-size:15px;
+}
+
+@media (min-width : 560px) and (max-width : 1199px){
+   .faq{
+      font-size : 16px;
+   }
+   .content{
+      line-height:normal;
+      word-break: keep-all;
+   }
+   strong{
+      font-size : 16px;
+   }
+}
+@media (min-width : 481px) and (max-width : 559px){
+   .faq{
+      font-size : 14px;
+   }
+   .content{
+      line-height:normal;
+      word-break: keep-all;
+   }
+   strong{
+      font-size : 14px;
+   }
+}
+@media (min-width : 360px) and (max-width : 480px){
+   .faq{
+      font-size : 12px;
+   }
+   .content{
+      line-height:normal;
+      word-break: keep-all;
+   }
+   strong{
+      font-size : 13px;
+   }
+}

@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	overflow-x:hidden;
+}
+
+.header{
+	background-color:#ae1e4c;
+   border: 1px solid #ae1e4c;
+}
+
+.head_logo{
+   width: 8%;
+   height : auto;
+   margin-top : 10px;
+}
+
+.head_bt {	
+	margin-top:1.4%;
+	margin-bottom:1.5%;
+}
+
+.back{
+	float:left;
+	width:2.5%;
+	margin-top:0.8%;
+	margin-left:1%;
+   margin-right:43%;
+   height : 100%;
+   margin-top : 10px;
+}
+.home{
+   float:left;
+   width:5%;
+   right : 2%;
+   position: absolute;
+   margin-top : 10px;
+}
+
+.login {
+  width : 2.3%;
+  float:right;
+  margin-right:1.7%;
+  margin-top:0.1%;
+  background-repeat : no-repeat;
+  background-position : center;
+  cursor : pointer;
+}
+
+.login_char{
+	color:#ffffff;
+	float:right;
+	margin-top:2.5%;
+   margin-right:-3%;
+   font-size: 13px;
+}
+
+.close {
+  width : 4%;
+  float:right;
+  margin-top:3%;
+  margin-right:3%;
+  background-repeat : no-repeat;
+  background-position : center;
+  cursor : pointer;
+}
+
+#menu {
+	border:solid 2px red;
+  width : 50%;
+  height : 100%;
+   position : fixed;
+  top : 0px;
+  right : -50%;
+  z-index : 10;
+  border : 1px solid #c9c9c9;
+  background-color : white;
+  text-align : center;
+  transition: All 0.2s ease; 
+  	-webkit-transition: All 0.2s ease; 
+  	-moz-transition: All 0.2s ease; 
+  	-o-transition: All 0.2s ease; 
+}
+
+#menu.open {
+  right : 0px;
+}
+
+.induk_logo{
+	width:35%;
+	margin-left: auto; 
+	margin-right: auto; 
+	display: block;
+	margin-top:35%;
+	margin-bottom:10%;
+}
+
+input[type=text] {
+	width: 70%;
+	line-height: 160%;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	margin-bottom:0.5%;
+}
+
+input[type=text]:focus {
+	outline:0 !important;
+	border-color: #a9b1d5;
+	border-radius: 5px;
+}
+
+input[type=password] {
+	width: 70%;
+	line-height: 160%;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	margin-bottom:2%;
+}
+
+input[type=password]:focus {
+	outline:0 !important;
+	border-color: #a9b1d5;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	text-align:center;
+    width: 72%;
+	line-height: 250%;	
+	background: #7481bb;
+	color: white;
+	border: 0 none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #a9b1d5;
+}
+

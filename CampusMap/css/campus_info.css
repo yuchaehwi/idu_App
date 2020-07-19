@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face { /* 인덕B체를 다운로드 받아 설정 */
+	font-family: IndukFont;
+	src: url('IndukB.ttf');
+	font-weight: bold; /* bold 스타일은 이 폰트로 등록 */
+}
+p {
+	text-align: center;
+}
+.pic {
+	float: left;
+	width: 100%;
+	border: 0;
+}
+.top {
+	padding: 1% 1% 1% 1%;
+	margin-top: 2%;
+	float: left;
+	font-size: 12px;
+}
+.campus_icon {
+	width: 4%;
+}
+
+.cam_content {
+	padding: 1% 3% 1% 3%;
+}
+
+.bottom{
+	width:100%;
+	height:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.bottom_table {
+	border-collapse: collapse;
+	font-size: 13px;
+}
+
+.th_1{
+	background-color: #7481bb;
+	color: #FFFFFF;
+	width: 15%;
+}
+
+.th_2{
+	background-color: #7481bb;
+	color: #FFFFFF;
+}
+
+.bottom_table th ,  .bottom_table td {
+	padding: 2% 2% 2% 2%; 
+}
+
+.bottom_table thead th:last-child,  .bottom_table tfoot th:last-child,  .bottom_table tbody td:last-child {
+	border: 0;
+}
+
+.bottom_table thead th {
+	border-right: 1px solid #7481bb;
+	text-transform: uppercase;
+}
+
+.bottom_table tbody td {
+	color: #353535;
+	text-align: center;
+	border-right: 1px solid #7481bb;
+}
+
+.td_1{
+	text-align:center;
+}
+
+.bottom_table tbody tr:nth-child(odd) td {
+	background-color: #F7EEF0;
+}
+
+.bottom_table tbody tr:nth-child(even) td {
+	background-color: #dde1ee;
+}
+
+.bottom_table tbody td:last-child {
+	text-align: left;
+}
+
+.bottom_table tbody tr:hover td {
+	background-color: #ffffa2;
+	border-color: #7481bb;
+	transition: all .2s;
+}
+
+.floor {
+	float: right;
+	cursor: pointer;
+}
+
+.foot_p{
+   color : #fff;
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title> </title>
+   <!-- 화면 표현 영역 설정 -->
+   <meta name="viewport" content="width=device-width, height-device-height, initial-scale=1, minimum-scale=1.0">
+
+   <!-- 외부 CSS 연결 -->
+   <link rel="stylesheet" href="faq.css?v=2" />
+   <link rel="stylesheet" href="../header.css" />
+   <link rel="stylesheet" href="../footer.css" />
+   <link rel="stylesheet" href="menuE.css" />
+   <link rel="stylesheet" href="../jquery/jquery-mobile1.4.5.css" />
+   <script src="../total.js"></script>
+   <script src="phonebook_javascript.js"></script>
+   <script src="../jquery/jquery1.11.1.js"></script>
+   <script src="../jquery/jquery-mobile1.4.5.js"></script>
+   <script src="faq.js?v=2"></script>
+</head>
+
+<body>
+   <div data-role="page" id="page">
+      <!-- 상단 -->
+      <?php include "../header.html"?>
+
+      <!-- 중단 -->
+      <div class="content" data-role="content">
+         <!--
+        <div class="faq" style="text-align:center">
+            <a href="#"> 휴학방법 </a> / 
+            <a href="#"> 복학신청 </a> / 
+            <a href="#"> ATM기계안내 </a> / 
+            <a href="#"> 흡연장안내 </a> <br>
+        </div>
+		-->
+
+         <div align="center">
+            <div id="college1" class="faq">
+               Q. 복학신청방법
+            </div>
+            <div id="sh1" class="faq content" data-role="fieldcontain" align="left">
+               <strong>①복학절차</strong><br />
+               &nbsp;&nbsp;가. 인터넷 신청 : [학사정보시스템 -> 휴.복학신청] 클릭하여 신청
+               (2월 13일(월) 10시 ~ 2월 17일(금) 16시까지 신청가능)<br />
+               &nbsp;&nbsp;나. 방문신청 : 학적과(은봉관 로비층) [접수시간 : 오전 10시 ~ 오후 4시]
+               주1) 아래와 같은 경우로 인터넷 복학신청이 안되는 학생은 학적과로 직접 방문하여 신청 바랍니다.<br />
+               * 전역예정자, 학기성적취소자, 산업체위탁과정, 전공심화과정, 일부 전공선택학과(방연,중국어,사복) 복학생은 학적과를 방문하여 복학신청 바랍니다.<br />
+
+               <strong>②지참서류</strong><br />
+               &nbsp;&nbsp;가. 입대, 가사 질병, 학기조정휴학자 : 신분증<br />
+               &nbsp;&nbsp;나. 산업체위탁과정 : 재직증명서, 4대보험가입증명서<br />
+
+               <strong>③유의사항</strong><br />
+               &nbsp;&nbsp;가. 복학대상자가 복학을 못 할 경우에는 3월 30일(목)까지 반드시 학적과를 방문하여 재휴학 신청을 하시기 바랍니다. 휴학 연장을 하지 않을 경우 3월 30일자로 미복학제적처리 되 오니
+               이 점 반드시 유의하시기 바랍니다.<br />
+               &nbsp;&nbsp;나. 3년제과의 복학생중 2년제 과정으로 입학한 학생은 본인의 의사에 따라 수업연한(2년제 또는 3년제 ) 선택이 가능합니다. 단, 수업연한 선택은 1회에 한하며, 선택 후에는 수업연
+               한변경이 불가하오니 신중하게 결정하시기 바랍니다.<br />
+               &nbsp;&nbsp;다. 복학시 해당학과 야간과정이 폐지되었을 경우에는 주간으로 복학처리됩니다. 단, 산업체위 탁과정 및 전공심화과정은 해당과정이 폐과되었을 경우에는 복학에 제한이 따를 수 있습니다.<br />
+
+               * 문의 : 학적과 (02-950-7066~7)
+            </div>
+
+            <div id="college2" class="faq">
+               Q. 휴학신청방법
+            </div>
+            <div id="sh2" class="faq content" data-role="fieldcontain" align="left">
+               ** 2014년부터 가사휴학은 2년제는 2회, 3년제는 3회에 한하여 허가합니다.***<br />
+               ***또한, 2013년까지의 가사휴학한 횟수는 산입하지 않고, 2014년부터 신청하는 가사휴학부터 횟수를 산정하게 되므로 이점 유의바랍니다. <br />
+               (입대 및 질병휴학은 횟수산입에서 제외) ***<br /><br />
+
+               *** 학기조정휴학은 연속2회까지만 허가합니다. ***<br />
+
+               <strong>① 휴학신청기간</strong><br />
+               &nbsp;&nbsp;- 2017년 2월 13일(월) 10시 ~ 2월 17일(금) 16시까지
+               &nbsp;&nbsp;- 인터넷 가사휴학 : 2017년 2월 13일(월) 10시 ~ 2월 17일(금) 16시까지
+               &nbsp;&nbsp;주1) 재학생 중 가사휴학하는 학생만 인터넷으로 신청가능합니다.
+               산업체위탁 및 전공심화과정 학생, 입대휴학 및 재휴학자는 인터넷 신청이 불가하므 로 필히 학적과를 방문하여 신청하시기 바랍니다.
+               &nbsp;&nbsp;주2) 성적장학금등 장학금을 수령하는 학생은 반드시 등록기간(2.15~2.17)에 등록후 휴학 처리하여야 합니다.
+               &nbsp;&nbsp;주3) 등록 후 휴학을 하고자 하는 학생은 등록기간(2월 15일~2월 17일)에 등록금을 납부후
+               2월 28일(화)전에 학적과를 방문하시어 휴학처리 하여야 합니다.
+               &nbsp;&nbsp;주4) 2017-1학기 휴학신청은 늦어도 당해학기 개시일(3월 2일) 이전까지 처리하시기 바랍 니다.
+               &nbsp;&nbsp;주5) 본인의 휴복학 처리후 처리결과를 반드시 조회바랍니다.
+               [학사정보시스템->마이페이지->학적정보조회]<br />
+
+               <strong>②휴학절차</strong> <br />
+               &nbsp;&nbsp;가. 학교 방문 : 학적과로 방문신청(은봉관 로비층) (접수시간 : 오전 10시~오후 4시)
+               **입대휴학자 및 재휴학자는 인터넷신청이 안되며 반드시 학적과를 방문하여 신청하여야 함**
+               &nbsp;&nbsp;나. 인터넷 신청 : [학사정보시스템-> 휴.복학신청] 클릭하여 신청
+               단, 재학생 중 가사휴학만 가능 (학사정보시스템 이용) <br />
+
+               <strong>③ 휴학종류</strong><br />
+               &nbsp;&nbsp;가. 가사휴학 : 개인적인 사유로 휴학하고자 하는 자
+               휴학기간은 1년(2학기 이상 초과할 수 없음)
+               &nbsp;&nbsp;나. 입대휴학: 병역의무로 휴학하고자 하는 자
+               휴학기간은 2년이며 입영통지서 및 신분증 등 증빙서류 지참하여야 함
+               &nbsp;&nbsp;다. 질병휴학 : 질병으로 인한 휴학하고자 하는 자
+               휴학기간은 1년이며 종합병원에서 발행한 4주이상 진단서를 지참하여야 함
+               &nbsp;&nbsp;라. 학기조정휴학 : 졸업유급이나 기타 사유로 학기조정이 필요한 자. 학기조정휴학은 연속 2 회까지만 허가<br />
+
+               <strong>④ 유의사항</strong><br />
+               &nbsp;&nbsp;가. 휴학기간이 경과했음에도 재휴학 또는 복학을 하지 않으면 3월 30일자로 미복학제적 처리 하므로 반드시 기간 엄수하여 복학 또는 재휴학 신청을 하시기 바랍니다.
+               &nbsp;&nbsp;나. 2년제 2회, 3년제 3회 가사휴학 횟수가 초과된 학생은 재휴학 신청할 수 없습니다. 반드시 2017-1학기에 복학하여야 하며, 미복학시 제적처리 되오니 유의바랍니다.
+               &nbsp;&nbsp;다. 휴학은 반드시 본인이 신청을 해야 됩니다. 본인이 사정상 못 할 경우에는 가족 중 대리인이 가족관계증명서를 지참하여 방문해 주시기 바랍니다
+               &nbsp;&nbsp;라. 산업체위탁생은 입대휴학 외에 개인사정에 의한 일반휴학(가사휴학)은 할 수 없으니 이 점 유의하여 주시기 바랍니다.<br />
+
+               * 문의 : 학적과(950-7066~7)
+            </div>
+
+            <div id="college3" class="faq">
+               Q. ATM 안내
+            </div>
+            <div id="sh3" class="faq content" data-role="fieldcontain" align="left">
+               <strong>위치</strong><br />
+               연지스퀘어 지하 1층 (KB국민은행, IBK기업은행 현금 인출기 각 1대)<br />
+               은봉관 로비 (KB국민은행 1대)<br />
+               도서관 1층 (KB국민은행 1대)<br />
+               <strong>운영시간</strong><br /> KB국민은행 : 07:00 ~ 23:30 / 고장문의 : 080-365-3653<br />
+               IBK기업은행 : 07:00 ~ 23:55 / 고장문의 : 1566-2566, 1588-2588
+            </div>
+
+            <div id="college4" class="faq">
+               Q. 흡연장 안내
+            </div>
+            <div id="sh4" class="faq content" data-role="fieldcontain" align="left">
+               <strong>위치</strong><br />
+               인관 뒤편<br />
+            </div>
+
+
+
+         </div>
+
+      </div>
+
+      <!-- 하단 -->
+      <?php include "../footer.html"?>
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> </title>
+<!-- 화면 표현 영역 설정 -->
+<meta name="viewport" content="width=device-width, height-device-height, initial-scale=1, minimum-scale=1.0">
+
+<!-- 외부 CSS 연결 -->
+	<link rel="stylesheet" href="found_circles.css"/>
+    <link rel="stylesheet" href="../header.css"/>        
+	<link rel="stylesheet" href="../footer.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="phonebook_javascript.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../total.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="page">
+	<!-- 상단 -->
+   <?php include "../header.html"?>
+    
+    <!-- 중단 -->
+<div class="content" data-role="content">
+   <div class="line1">
+      <span onclick="move('circles.html');">일반동아리</span><span onclick="move('found_circles.html');">창업동아리</span>
+   </div>
+
+	<div class="intro02_wrap01">
+				<img src="img/bar.png" class="bar">
+                <p class="intro_found">창업동아리 현황</p>
+						<table class="rule_table" summary="창업동아리 현황 정보이며 학과명, 동아리명, 아이템명, 구성원수, 동아리회장(성명)을 제공합니다.">
+							<thead>
+								<tr>
+									<th scope="col" class="th_1">학과명</th>
+									<th scope="col" class="th_2">동아리명</th>
+									<th scope="col" class="th_3">아이템명</th>
+									<th scope="col" class="th_4">구성원수</th>
+									<th scope="col" class="th_5">회장</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								    <td class="td_1" rowspan="2">컴퓨터전자공학과</td>
+								    <td class="td_1">컴퓨터기술 동아리</td>
+								    <td class="td_3">지능형 스마트 센서 개발</td>
+								    <td class="td_1">7</td>
+								    <td class="td_5">서원제</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터전자공학과</td> -->
+								    <td class="td_1">ASIC</td>
+								    <td class="td_3">공중촬영을 이용한 주차 감시 장치</td>
+								    <td class="td_1">3</td>
+								    <td class="td_5">강치훈</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">메카트로닉스과</td>
+								    <td class="td_1">마이크로<br> 로봇창업동아리</td>
+								    <td class="td_3">한글스틱, 애완동물 당뇨 측정패드, 국제 로봇 물고기대회 시뮬레이터, 알람 이불</td>
+								    <td class="td_1">13</td>
+								    <td class="td_5">이주인</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">방송영상<br>미디어학과</td>
+								    <td class="td_1">비주얼크루</td>
+								    <td class="td_3">홍보영상, 광고, 뮤직비디오 기획 및 주문제작</td>
+								    <td class="td_1">30</td>
+								    <td class="td_5">김다연</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">정보통신공학과</td>
+								    <td class="td_1">정보통신<br>연구회</td>
+								    <td class="td_3">바이오센서 SMS 송수신기 개발</td>
+								    <td class="td_1">26</td>
+								    <td class="td_5">이다솔</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="4">건축학과</td>
+								    <td class="td_1">Innovative<br>DESIGN LAB</td>
+								    <td class="td_3">친환경재료를 이용하여 가옥, 가구, 실내장식 등의 다양한 아이템 개발</td>
+								    <td class="td_1">12</td>
+								    <td class="td_5">김영재</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">건축학과</td> -->
+								    <td class="td_1">한옥동아리</td>
+								    <td class="td_3">전통 문양, 문살, 단청에 대한 새로운 디자인 연구 및 현대적 요소와 조화로움 도모</td>
+								    <td class="td_1">25</td>
+								    <td class="td_5">문태길</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">건축학과</td> -->
+								    <td class="td_1">건축영상<br>이미지</td>
+								    <td class="td_3">소품과 건축 이미지를 결합한 창업 아이템</td>
+								    <td class="td_1">22</td>
+								    <td class="td_5">임수영</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">건축학과</td> -->
+								    <td class="td_1">모형제작</td>
+								    <td class="td_3">모형작업을 레이저 기기를 사용하여 아이템 연구, 제작, 상품화</td>
+								    <td class="td_1">29</td>
+								    <td class="td_5">성시윤</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">디지털산업<br>디자인학과</td>
+								    <td class="td_1">IDC</td>
+								    <td class="td_3">생활 소품 디자인</td>
+								    <td class="td_1">9</td>
+								    <td class="td_5">김혜림</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="2">기계설계학과</td>
+								    <td class="td_1">GREAT<br>DESIGN</td>
+								    <td class="td_3">장애인, 고령자를 위한 이동보조 기기 요소 및 부품 개발 및 설계</td>
+								    <td class="td_1">10</td>
+								    <td class="td_5">이진안</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">기계설계학과</td> -->
+								    <td class="td_1">nano-teck<br>club</td>
+								    <td class="td_3">3d프린더 제작, 초정밀 다이아 몬드 공구제작</td>
+								    <td class="td_1">20</td>
+								    <td class="td_5">김용범</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="4">기계자동차학과</td>
+								    <td class="td_1">씽크 탱크</td>
+								    <td class="td_3">공기 터빈 보조 시스템(ATAS)</td>
+								    <td class="td_1">9</td>
+								    <td class="td_5">신현식</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">기계자동차학과</td> -->
+								    <td class="td_1">구조해석</td>
+								    <td class="td_3">Vision 시스템과 이송 스테이지를 연동한 고정밀 pattern 인식 및 제어 시스템 개발</td>
+								    <td class="td_1">14</td>
+								    <td class="td_5">김용수</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">기계자동차학과</td> -->
+								    <td class="td_1">자동화연구회</td>
+								    <td class="td_3">자동화 시스템개발</td>
+								    <td class="td_1">10</td>
+								    <td class="td_5">박승선</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">기계자동차학과</td> -->
+								    <td class="td_1">IDU FORMULA</td>
+								    <td class="td_3">자동차 기어부품 제작</td>
+								    <td class="td_1">9</td>
+								    <td class="td_5">이수호</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="2">토목환경공학과</td>
+								    <td class="td_1">A.F.C-CIVIL</td>
+								    <td class="td_3">동적콘관입시험기 소영화, 실험방식 간소화,제품 판매 및 리뉴얼 작성</td>
+								    <td class="td_1">19</td>
+								    <td class="td_5">박소연</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">토목환경공학과</td> -->
+								    <td class="td_1">공학장비개발<br>연구회<br>(SEEDS)</td>
+								    <td class="td_3">비점오염원(NPSCs) 정화 효율향상을 위한 장비 개선 및 오염원 포획 필터 개발</td>
+								    <td class="td_1">17</td>
+								    <td class="td_5">안현규</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="6">컴퓨터<br>소프트웨어학과</td>
+								    <td class="td_1">전산정보기술<br>(Rebooting)</td>
+								    <td class="td_3">모바일, 웹 공동기반의 앱 컨텐츠 제작 플랫폼 개발</td>
+								    <td class="td_1">20</td>
+								    <td class="td_5">이창재</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터<br>소프트웨어학과</td> -->
+								    <td class="td_1">인터넷 및 <br>전자상거래</td>
+								    <td class="td_3">스마트폰 응용 E-PUB 어플리케이션 시스템 제작과 DRM기술 개발</td>
+								    <td class="td_1">11</td>
+								    <td class="td_5">김인중</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터<br>소프트웨어학과</td> -->
+								    <td class="td_1">IFP</td>
+								    <td class="td_3">네트워크의 패킷의 흐름을 파악할 수 있는 솔루션 또는 해킹방지 툴 제작</td>
+								    <td class="td_1">35</td>
+								    <td class="td_5">노창오</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터<br>소프트웨어학과</td> -->
+								    <td class="td_1">PASSION</td>
+								    <td class="td_3">소자본 창업에 적합한 웹 및 Android용 앱 개발</td>
+								    <td class="td_1">17</td>
+								    <td class="td_5">이태호</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터<br>소프트웨어학과</td> -->
+								    <td class="td_1">게임제작<br>동아리</td>
+								    <td class="td_3">2D 온라인 몬스터 사냥 게임, 3D 포켓몬스터,MBT(Multi-brain-Training), 심리역이용게임</td>
+								    <td class="td_1">8</td>
+								    <td class="td_5">박민영</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">컴퓨터<br>소프트웨어학과</td> -->
+								    <td class="td_1">네트워크<br>프로그래밍동아리</td>
+								    <td class="td_3">모바일 관련 App 개발</td>
+								    <td class="td_1">25</td>
+								    <td class="td_5">이정훈</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">산업경영공학과</td>
+								    <td class="td_1">CBC</td>
+								    <td class="td_3">기업 데이터 분석과 6시그마를 이용한 기업 개선 시스템 개발</td>
+								    <td class="td_1">35</td>
+								    <td class="td_5">이금희</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="3">주얼리디자인학과</td>
+								    <td class="td_1">G &amp; S</td>
+								    <td class="td_3">패션주얼리 디자인 연구 및 개발</td>
+								    <td class="td_1">26</td>
+								    <td class="td_5">송대석</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">주얼리디자인학과</td> -->
+								    <td class="td_1">패션주얼리<br>랩</td>
+								    <td class="td_3">준보석을 소재로 한 의류 장식용 패션주얼리</td>
+								    <td class="td_1">10</td>
+								    <td class="td_5">황혜미</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">주얼리디자인학과</td> -->
+								    <td class="td_1">IDUJD</td>
+								    <td class="td_3">주얼리 인터넷 쇼핑몰 디자인회사</td>
+								    <td class="td_1">9</td>
+								    <td class="td_5">최연정</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="4">공간장식도자<br>디자인학과</td>
+								    <td class="td_1">슈퍼화이트</td>
+								    <td class="td_3">감성적 디자인의 손거울 연구개발</td>
+								    <td class="td_1">25</td>
+								    <td class="td_5">임우승</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">공간장식도자<br>디자인학과</td> -->
+								    <td class="td_1">터울림 도자<br> 창업동아리</td>
+								    <td class="td_3">도자제 아이디어 상품 연구 개발</td>
+								    <td class="td_1">33</td>
+								    <td class="td_5">김휘연</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">공간장식도자<br>디자인학과</td> -->
+								    <td class="td_1">36.5±</td>
+								    <td class="td_3">멀티 재료와 제작방법을 활용한 도자장신구</td>
+								    <td class="td_1">34</td>
+								    <td class="td_5">박지은</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">공간장식도자<br>디자인학과</td> -->
+								    <td class="td_1">키친</td>
+								    <td class="td_3">주방용 앞치마 및 머그컵 디자인</td>
+								    <td class="td_1">37</td>
+								    <td class="td_5">이지훈</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="4">멀티미디어<br>디자인학과</td>
+								    <td class="td_1">아이브랜드</td>
+								    <td class="td_3">미니 아이브랜드 몰 상품 개발</td>
+								    <td class="td_1">21</td>
+								    <td class="td_5">이지윤</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">멀티미디어<br>디자인학과</td> -->
+								    <td class="td_1">M &amp; M</td>
+								    <td class="td_3">픽토그램, 클립아트 등을 제작하여 컨텐츠 활용시 사용될 멀티미디어 개발</td>
+								    <td class="td_1">12</td>
+								    <td class="td_5">신건우</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">멀티미디어<br>디자인학과</td> -->
+								    <td class="td_1">On &amp; Off</td>
+								    <td class="td_3">개인쇼핑몰 제작능력 함양</td>
+								    <td class="td_1">13</td>
+								    <td class="td_5">박준서</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">멀티미디어<br>디자인학과</td> -->
+								    <td class="td_1">클릭</td>
+								    <td class="td_3">웹 기반 홍보물 제작</td>
+								    <td class="td_1">10</td>
+								    <td class="td_5">송형석</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">만화 · 애니메이션<br>학과</td>
+								    <td class="td_1">PIXEL</td>
+								    <td class="td_3">코믹팝 브랜드 활성화를 위한 콘텐츠 용품 제작</td>
+								    <td class="td_1">15</td>
+								    <td class="td_5">현재휴</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">시각디자인과</td>
+								    <td class="td_1">人디자인</td>
+								    <td class="td_3">B.I 런칭 및 실제작</td>
+								    <td class="td_1">17</td>
+								    <td class="td_5">이신영</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">실내건축과</td>
+								    <td class="td_1">미래공간 <br>디자인연구소</td>
+								    <td class="td_3">실내건축의 미래지향적 공간 창출, 모형제작 검토</td>
+								    <td class="td_1">21</td>
+								    <td class="td_5">이진아</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">건설정보공학과</td>
+								    <td class="td_1">Dura-machs</td>
+								    <td class="td_3">콘크리트 구조물의 차염도막공법 및 검증기술 개발</td>
+								    <td class="td_1">5</td>
+								    <td class="td_5">최형규</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">관광서비스<br>경영학과</td>
+								    <td class="td_1">와인바&amp;카페</td>
+								    <td class="td_3">와인바 &amp; 바, 카페 커피 전문점</td>
+								    <td class="td_1">37</td>
+								    <td class="td_5">김은진</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="3">도시환경디자인과</td>
+								    <td class="td_1">도시와 공간&nbsp;</td>
+								    <td class="td_3">안전하고 쾌적한 도시환경을 위한 공공디자인 공모전</td>
+								    <td class="td_1">9</td>
+								    <td class="td_5">유명환</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">도시환경디자인과</td> -->
+								    <td class="td_1">생활사인 <br>디자인 동아리</td>
+								    <td class="td_3">사인디자인, 생활소품디자인</td>
+								    <td class="td_1">8</td>
+								    <td class="td_5">이지원</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">도시환경디자인과</td> -->
+								    <td class="td_1">해피핸즈<br>(happy hands)</td>
+								    <td class="td_3">도시의 공간을 풍요롭게 하는 생활환경 디자인</td>
+								    <td class="td_1">4</td>
+								    <td class="td_5">최진희</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1" rowspan="2">중국어과</td>
+								    <td class="td_1">Chi-Ccon</td>
+								    <td class="td_3">중국을 겨냥한 K-POP 홍보 캐릭터 개발 및 상품 제작</td>
+								    <td class="td_1">10</td>
+								    <td class="td_5">권찬미</td>
+								  </tr>
+								  <tr>
+								    <!-- <td class="td_1">중국어과</td> -->
+								    <td class="td_1">Two-cs</td>
+								    <td class="td_3">중국어 서비스 마케팅 블로그 콘텐츠 제작 및&nbsp;    운영</td>
+								    <td class="td_1">21</td>
+								    <td class="td_5">강진주</td>
+								  </tr>
+								  <tr>
+								    <td class="td_1">합계</td>
+								    <td class="td_1">46개 동아리</td>
+								    <td class="td_3">총 창업 동아리 회원 수</td>
+								    <td class="td_1">812</td>
+									<td  class="td_5"></td>
+								  </tr>
+							</tbody>
+						</table>
+					</div>
+			</div>       
+
+    
+    <!-- 하단 -->
+    <?php include "../footer.html"?>
+</div>
+        
+</body>
+</html>

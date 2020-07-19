@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+table{
+        font-size:14px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #3A3A3A;
+        border-collapse: collapse;
+		text-align:center;
+      width:100%;
+		table-layout:fixed;
+}
+
+th{
+	    border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #3A3A3A;
+        background-color: #e5e5e5;
+		font-weight:bold;
+}
+
+td{
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #3A3A3A;
+        background-color: #ffffff;
+}
+
+@media (min-width : 560px) and (max-width : 1199px){
+
+}
+@media (min-width : 481px) and (max-width : 559px){
+
+}
+@media (min-width : 360px) and (max-width : 480px){
+
+}
